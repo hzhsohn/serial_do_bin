@@ -279,7 +279,7 @@ BOOL CSerialDebugDlg::OnInitDialog()
 	 m_Toolbar.GetToolBarCtrl().SetImageList(&m_ImageList);
 	 //显示工具栏
 	 RepositionBars(AFX_IDW_CONTROLBAR_FIRST, AFX_IDW_CONTROLBAR_LAST, 0);
-	 /*/
+	 /* 位置
 	 CRect rx;
 	 m_Toolbar.GetClientRect(&rx);
 	 rx.top+=20/PIEXL_BN;
@@ -677,23 +677,27 @@ void CSerialDebugDlg::OnBnClickedButton2()
 			//-------------------------------------
 	}
 }
-
+//这里是按键的功能
 void CSerialDebugDlg::OnBnClickedButton3()
 {
+	m_Toolbar.GetToolBarCtrl().EnableButton(ID_BTN3,false);
 }
 
-//这里是按键的功能
 void CSerialDebugDlg::OnBnClickedButton4()
 {
+	m_Toolbar.GetToolBarCtrl().EnableButton(ID_BTN4,false);
 }
 void CSerialDebugDlg::OnBnClickedButton5()
 {
+	m_Toolbar.GetToolBarCtrl().EnableButton(ID_BTN5,false);
 }
 void CSerialDebugDlg::OnBnClickedButton6()
 {
+	m_Toolbar.GetToolBarCtrl().EnableButton(ID_BTN6,false);
 }
 void CSerialDebugDlg::OnBnClickedButton7()
 {
+	m_Toolbar.GetToolBarCtrl().EnableButton(ID_BTN7,false);
 }
 void CSerialDebugDlg::OnBnClickedButton8()
 {
